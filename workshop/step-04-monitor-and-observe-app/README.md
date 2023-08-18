@@ -78,7 +78,7 @@ smaller memory footprint.  They will both take up all available CPU under a defa
 test.
 
 Native is still very light usage:
-![An image showing the petclinic native application](native-app-usage-2.png)
+![An image showing the petclinic application memory usage](loadtest-memory.png)
 
 ### Scale and observe
 

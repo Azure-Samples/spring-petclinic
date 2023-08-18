@@ -37,6 +37,12 @@ Here, if you look at the applications on startup, you can see the very different
 JVM-based app compared to the Native app, and you can see a much smaller memory footprint for the
 Native app as compared to the JVM app.
 
+JVM:
+![An image showing the metrics of petclinic running as a jar](metrics-startup-jar.png)
+
+Native: 
+![An image showing the metrics of petclinic running as a jar](metrics-startup-native.png)
+
 ## Load test both applications 
 
 For the Load test step you'll want to have on hand the endpoints to the two applications,
@@ -52,8 +58,11 @@ az spring app show --name ${NATIVE_APP} --query properties.url --output tsv
 Add an Azure Load Testing resource from the Create Resource screen in the Azure Portal by searching
 for Azure Load Testing and creating one with defaults in your resource group.
 
+![An image showing Azure Load Testing](azureloadtest.png)
+
 Open the resource we've just created, then click the `Get Started with Quick Test` button to start
 a quick test.
+
 
 ### Run Tests
 
@@ -61,10 +70,15 @@ On the Quick Test screen, plug in the Jar App's url and keep the default setting
 `Run Test` and wait a few minutes it to complete. When complete, you can repeat the process with
 the Native App, and then compare results in the portal on the Test Runs page.
 
+![An image showing Azure Load Testing Quick Test](load-quick-test.png)
+
 Let's go to the metrics page on our ASA-E instance and see the results of our load testing. There
 should be a large spike in CPU usage and a smaller spike in memory. Our Native app holds at a much
 smaller memory footprint.  They will both take up all available CPU under a default settings load
 test.
+
+Native is still very light usage:
+![An image showing the petclinic native application](native-app-usage-2.png)
 
 ### Scale and observe
 

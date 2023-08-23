@@ -209,3 +209,31 @@ Also, we can use same packaged JAR, e.g.
 ./mvnw clean package
 java -jar -Dspring.profiles.active=mysql target/spring-petclinic-3.1.0-SNAPSHOT.jar
 ```
+
+## Build and Run App Locally with Dev Containers
+
+Another option to deploy locally is to use Visual Studio Code Dev Containers. This enables Visual Studio Code to automatically open your repository in a docker container, and you can run locally in the docker container.
+
+There are three ways to open a repository in a in a Dev Container:
+
+The first way is that when you open the repository in Visual Studio Code, it will ask you if you want to open the dev container via a notification:
+
+![Reopen in Container](image.png)
+
+Click `Reopen in Container`.
+
+Thes second way is to use the command palette (CMD-SHIFT-P) and select `Dev Containers: Reopen in Container`:
+
+![Reopen in Container](image-1.png)
+
+When you have successfully opened the repository inside a dev container, you should see the following UI hints in Visual Studio Code:
+
+![Visual Studio Code hint](image-2.png)
+
+(Notice the "Dev Container" in the title and "Dev Container" on the bottom left status bar).
+
+Once you open the repository in the dev container, run Maven:
+
+```
+mvn -Pnative spring-boot:build-image -Dmaven.test.skip
+```

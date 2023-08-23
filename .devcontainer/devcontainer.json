@@ -16,7 +16,13 @@
 	"postCreateCommand": "sudo chown vscode:vscode /home/vscode/.m2 /home/vscode/.gradle",
 	"remoteUser": "vscode",
 	"features": {
-		"docker-in-docker": "latest"
+		"docker-in-docker": "latest",
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"mavenVersion": "3.8.6",
+			"installGradle": "false"
+		}
 	},
 	"extensions": [
 		"vscjava.vscode-java-pack",

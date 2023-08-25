@@ -11,7 +11,7 @@
     * [Configure Application with H2 Database](../step-05-run-and-build-app-locally/README.md#configure-application-with-h2-database)
     * [Run the App Locally](../step-05-run-and-build-app-locally/README.md#run-the-app-locally)
     * [Build and Package the App as a JAR](../step-05-run-and-build-app-locally/README.md#build-and-package-the-app-as-a-jar)
-    * [Build andd Package the App as a Java Native Image](../step-05-run-and-build-app-locally/README.md#build-andd-package-the-app-as-a-java-native-image)
+    * [Build and Package the App as a Java Native Image](../step-05-run-and-build-app-locally/README.md#build-and-package-the-app-as-a-java-native-image)
     * [Build and Run App Locally with Docker](../step-05-run-and-build-app-locally/README.md#build-and-run-app-locally-with-docker)
     * [Build and Run App Locally with Docker and PostgreSQL](../step-05-run-and-build-app-locally/README.md#build-and-run-app-locally-with-docker-and-postgresql)
     * [Build and Run App Locally with Docker and MySQL](../step-05-run-and-build-app-locally/README.md#build-and-run-app-locally-with-docker-and-mysql)
@@ -108,7 +108,7 @@ Started PetClinicApplication in 3.183 seconds (process running for 3.461)
 ```
 
 
-## Build andd Package the App as a Java Native Image
+## Build and Package the App as a Java Native Image
 
 In order to build a native application from Java source code, you will need a compatible JVM,
 such as GraalVM. Please make sure you have a compatible JVM, e.g.

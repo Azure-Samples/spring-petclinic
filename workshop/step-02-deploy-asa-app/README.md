@@ -198,3 +198,6 @@ az spring app show -n ${JAR_APP} -o JSON | jq -r '.properties.url'
 az spring app show -n ${NATIVE_APP} -o JSON | jq -r '.properties.url'
 ```
 
+> Next: [Unit 3a - Bind to PostgreSQL Database](../step-03a-bind-to-postgresql-database/README.md)
+
+> Next: [Unit 3b - Bind to MySQL Database](../step-03b-bind-to-mysql-database/README.md)

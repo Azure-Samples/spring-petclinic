@@ -127,3 +127,5 @@ Similarly, you can check the applications (placeholders) configuration details u
 az spring app show --name ${JAR_APP}
 az spring app show --name ${NATIVE_APP}
 ```
+
+> Next: [Unit 2 - Deploy an Azure Spring Apps application](../step-02-deploy-asa-app/README.md)

@@ -421,3 +421,6 @@ or using `jq` utility to parse JSON output, instead of JMESPath `-query`:
 ```bash
 az spring dev-tool show | jq -r '.properties.url'
 ```
+
+
+> Next: [Unit 1 - Create an Azure Spring Apps application](../step-01-create-asa-app/README.md)
